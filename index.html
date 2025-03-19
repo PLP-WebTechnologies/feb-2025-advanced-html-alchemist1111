@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment</title>
+</head>
+<body>
+    <h1>Advanced HTML5 Elements and Forms</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>Ruby</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/20141675/pexels-photo-20141675/free-photo-of-view-of-an-orca-swimming-near-the-coast.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Orca Swimming near the Coast" width="300" height="300">
+
+    <!-- Table of Contacts -->
+     <h2>Contacts</h2>
+     <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Eugene Emoyo</td>
+                <td>50205, Webuye</td>
+                <td>0712345678</td>
+                <td>emoyoeugene@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Florian Nyagi</td>
+                <td>169, Gambogi</td>
+                <td>0712345678</td>
+                <td>nyagiflorian@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Lawrence Sulu</td>
+                <td>1234, Nambale</td>
+                <td>0712345678</td>
+                <td>lawrence@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Nicole Nekesa</td>
+                <td>50205, Webuye</td>
+                <td>0712345678</td>
+                <td>nicole@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Faith Sheila</td>
+                <td>50205, Webuye</td>
+                <td>0712345678</td>
+                <td>faith@gmail.com</td>
+            </tr>
+        </tbody>
+     </table>
+
+     <!-- Registration Form -->
+      <h2>Registration Form</h2>
+      <form action="#" method="POST">
+        <!-- Name Field -->
+         <div class="form-control">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name.." required>
+         </div>
+
+         <!-- Email Field -->
+          <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email Address.." required>
+         </div>
+
+         <!-- Password Field -->
+          <div class="form-control">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password.." required>
+         </div>
+
+         <!-- Date Field -->
+          <div class="form-control">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+         </div>
+
+         <!-- Dropdown Field -->
+       <h2>Dropdown Field</h2>
+       <div class="form-control">
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+          </select>
+       </div>
+
+    <!-- Radio Buttons for Gender -->
+     <h2>Radio Buttons for Gender</h2>
+     <div class="form-control">
+        <label for="gender">Gender:</label>
+        <div>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+     </div>
+
+     <!-- Checkboxes for Interests -->
+      <h2>Checkboxes for Interests</h2>
+      <div class="form-control">
+        <label for="interests">Interests:</label>
+        <div>
+            <input type="checkbox" id="reading" name="interests[]" value="reading" required>
+            <label for="reading">Reading</label>
+        </div>
+        <div>
+            <input type="checkbox" id="coding" name="interests[]" value="coding" required>
+            <label for="coding">Coding</label>
+        </div>
+        <div>
+            <input type="checkbox" id="painting" name="interests[]" value="painting" required>
+            <label for="painting">Painting</label>
+        </div>
+        <div>
+            <input type="checkbox" id="hiking" name="interests[]" value="hiking" required>
+            <label for="hiking">Hiking</label>
+        </div>    
+      </div>
+
+      <!-- Submit Button -->
+       <div class="form-control">
+          <input type="submit" value="Submit">
+       </div>
+      </form>
+
+      <!-- Multimedia Section -->
+       <h2>Multimedia Section</h2>
+       <div class="multimedia">
+            <!-- Video -->
+             <div>
+                <h3>Video</h3>
+                <video controls>
+                    <source src="assets/Behold (Then Sings My Soul) - Hillsong Worship.mkv" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+             </div>
+
+            <!-- Audio -->
+             <div>
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="assets/maroon_5_beautiful_mistakes_ft._megan_thee_stallion_official_music_video_mp3_78740.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+             </div>
+       </div>    
+</body>
+</html>
